@@ -4,19 +4,19 @@ function Navbar() {
       <div className="w-full px-6 py-4">
         <div className="flex items-center justify-between">
 
-          {/* Mobile menu */}
+          
           <button className="md:hidden text-gray-600 text-xl">
             ☰
           </button>
 
-          {/* Logo */}
+         
           <img
             src="/src/assets/logo-text.png"
             alt="Dev Stack"
-            className="w-28"
-          />
+            className="w-28" 
+            />
 
-          {/* Navigation */}
+          
           <div className="hidden md:flex items-center gap-8 text-sm">
             <a href="#" className="text-pink-500 font-medium">
               Home
@@ -39,7 +39,7 @@ function Navbar() {
             </a>
           </div>
 
-          {/* Buttons */}
+          
           <div className="flex items-center gap-4">
             <button className="text-sm text-gray-600">
               Sign In
