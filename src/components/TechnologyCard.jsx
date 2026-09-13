@@ -2,7 +2,6 @@ const TechnologyCard = ({ technology, onAdd, isAdded }) => {
   return (
     <div className="flex min-h-[245px] flex-col rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
 
-      
       <div className="mb-4 flex items-start justify-between">
         <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-50">
           <img
@@ -12,22 +11,21 @@ const TechnologyCard = ({ technology, onAdd, isAdded }) => {
           />
         </div>
 
-        <span className="rounded-full bg-pink-50 px-2.5 py-1 text-[10px] font-medium text-pink-500">
-          {technology.badge}
-        </span>
+        {technology.badge && (
+          <span className="rounded-full bg-pink-50 px-2.5 py-1 text-[10px] font-medium text-pink-500">
+            {technology.badge}
+          </span>
+        )}
       </div>
 
-      
       <h3 className="mb-2 text-base font-bold text-gray-900">
         {technology.name}
       </h3>
 
-      
       <p className="mb-4 line-clamp-3 text-[11px] leading-5 text-gray-500">
         {technology.description}
       </p>
 
-      
       <div className="mb-3 flex flex-wrap items-center gap-2">
         <span className="rounded-md bg-gray-100 px-2 py-1 text-[9px] text-gray-500">
           {technology.category}
@@ -46,7 +44,6 @@ const TechnologyCard = ({ technology, onAdd, isAdded }) => {
         </span>
       </div>
 
-      
       <button
         onClick={() => onAdd(technology)}
         disabled={isAdded}

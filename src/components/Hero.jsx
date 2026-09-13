@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <section className="py-20 md:py-24">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="px-6 md:px-[104.5px]">
         <div className="flex flex-col items-center justify-between gap-12 md:flex-row md:gap-20">
 
           <div className="w-full md:w-1/2">
@@ -32,7 +32,7 @@ function Hero() {
 
           <div className="flex w-full justify-center md:w-1/2">
             <img
-              src="src/assets/banner-stack.png"
+              src="/src/assets/banner-stack.png"
               alt="Development Stack"
               className="w-72 md:w-96"
             />
