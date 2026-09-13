@@ -1,3 +1,5 @@
+import logoText from "../assets/logo-text.png";
+
 function Footer() {
   return (
     <footer className="border-t border-gray-100 bg-white">
@@ -7,7 +9,7 @@ function Footer() {
 
           <div>
             <img
-              src="/src/assets/logo-text.png"
+              src={logoText}
               alt="Dev Stack"
               className="mb-4 w-28"
             />

@@ -1,3 +1,5 @@
+import bannerStack from "../assets/banner-stack.png";
+
 function Hero() {
   return (
     <section className="py-20 md:py-24">
@@ -32,7 +34,7 @@ function Hero() {
 
           <div className="flex w-full justify-center md:w-1/2">
             <img
-              src="/src/assets/banner-stack.png"
+              src={bannerStack}
               alt="Development Stack"
               className="w-72 md:w-96"
             />
