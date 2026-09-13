@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TechnologyGrid from "./components/TechnologyGrid";
+import Footer from "./components/Footer";
 
 function App() {
   const [technologies, setTechnologies] = useState([]);
@@ -61,6 +62,7 @@ function App() {
   return (
     <>
       <Navbar />
+
       <Hero />
 
       {loading ? (
@@ -78,6 +80,8 @@ function App() {
           onRemoveAll={handleRemoveAll}
         />
       )}
+
+      <Footer />
 
       <ToastContainer
         position="top-right"
