@@ -13,7 +13,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/technologies.json")
+    fetch(`${import.meta.env.BASE_URL}technologies.json`)
       .then((response) => response.json())
       .then((data) => {
         setTechnologies(data);
